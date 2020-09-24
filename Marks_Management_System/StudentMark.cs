@@ -10,11 +10,8 @@ namespace Marks_Management_System
         public int ID { get; set; }
         public string Class { get; set; }
         public int Semester { get; set; }
-        public float AverageMark;
-        public float GetAverageMark()
-        {
-            return AverageMark;
-        }
+        public float AverageMark { get { return GetAverageMark; } }
+        public float GetAverageMark;
         public void Display()
         {
             Console.WriteLine("Full name :" + FullName);
@@ -37,7 +34,7 @@ namespace Marks_Management_System
         }
         public void AveCal()
         {
-            AverageMark = (float)(SubjectMarkList[0] + SubjectMarkList[1] + SubjectMarkList[2] + SubjectMarkList[3] + SubjectMarkList[4]) / 5;
+            GetAverageMark = (float)(SubjectMarkList[0] + SubjectMarkList[1] + SubjectMarkList[2] + SubjectMarkList[3] + SubjectMarkList[4]) / 5;
         }
     }
 }

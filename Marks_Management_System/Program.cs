@@ -9,7 +9,7 @@ namespace Marks_Management_System
         {
             Program program = new Program();
             int choice;
-            Console.WriteLine("STUDENT MANAGEMENT SYSTEM");
+            Console.WriteLine("MARK MANAGEMENT SYSTEM");
             Console.WriteLine("1. Insert new Student");
             Console.WriteLine("2. View list of Stdent");
             Console.WriteLine("3. Average Mark");
